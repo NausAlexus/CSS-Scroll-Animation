@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+
+    timeline-scope: --animScroller;
+}
+  
+.content,
+.scroller {
+    flex: 1;
+}
+
+.scroller {
+    overflow-y: scroll;
+    scroll-timeline-name: --animScroller;
+}
+  
+.element {
+    height: 2000px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 100%;
+}
+
+.square1 {
+    left: 25%;
+}
+
+.square2 {
+    left: 45%;
+}
+
+.square3 {
+    left: 65%;
+}
+
+.animation1 {
+    animation: rotate-square1;
+    animation-timeline: --animScroller;
+}
+  
+@keyframes rotate-square1 {
+    0% {
+      rotate: 0deg;
+      top: 100%;
+    }
+
+    20% {
+        rotate: 0deg;
+        top: 50%;
+    }
+
+    40% {
+        rotate: 180deg;
+        top: 50%;
+    }
+
+    80% {
+        rotate: 180deg;
+        top: 50%;
+    }
+  
+    100% {
+        rotate: 180deg;
+        top: -15%;
+    }
+}
+
+.animation2 {
+    animation: rotate-square2;
+    animation-timeline: --animScroller;
+}
+  
+@keyframes rotate-square2 {
+    0% {
+      rotate: 0deg;
+      top: 100%;
+    }
+
+    20% {
+        rotate: 0deg;
+        top: 50%;
+    }
+
+    40% {
+        rotate: 0deg;
+        top: 50%;
+    }
+
+    60% {
+        rotate: 180deg;
+        top: 50%;
+    }
+
+    80% {
+        rotate: 180deg;
+        top: 50%;
+    }
+  
+    100% {
+        rotate: 180deg;
+      top: -15%;
+    }
+}
+
+.animation3 {
+    animation: rotate-square3;
+    animation-timeline: --animScroller;
+}
+  
+@keyframes rotate-square3 {
+    0% {
+      rotate: 0deg;
+      top: 100%;
+    }
+
+    20% {
+        rotate: 0deg;
+        top: 50%;
+      }
+
+    60% {
+        rotate: 0deg;
+        top: 50%;
+    }
+
+    80% {
+        rotate: 180deg;
+        top: 50%;
+    }
+  
+    100% {
+      rotate: 180deg;
+      top: -15%;
+    }
+}
